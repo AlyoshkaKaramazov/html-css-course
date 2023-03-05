@@ -1,0 +1,32 @@
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0px;
+    background-color: #13a4a4;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    font-size: 25px;
+    color: white;
+    padding: 15px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+/* This is the subclass syntaxis (a:hover) */
+.main-nav__item a:hover {
+    color: blueviolet;
+}
+
+.main-nav__item a:active {
+    color: red;
+}
+
+/* Here I created a SUBELEMT the syntaxis is similar to a subclass but with a::after (2 colons) */
+.main-nav__item a::after {
+    content: " | ";
+}
